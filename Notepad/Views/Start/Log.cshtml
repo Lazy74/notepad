@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Log";
+}
+
+<html>
+<head>
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/Log.css" rel="stylesheet"/>
+
+    <script src="/Scripts/Log.js"></script>
+    <script src="/Scripts/knockout-3.4.0.js"></script>
+</head>
+
+<body>
+    <button id="btn-to-start-page" class="btn btn-success" data-bind="click: toStartPage">Вернуться к блокнотам</button>
+
+    <table border="1" class="tb table-condensed">
+        <caption>Лог</caption>
+        <tr>
+            <th>Time</th>
+            <th>Type controller</th>
+            <th>Controller</th>
+            <th>Action</th>
+        </tr>
+
+        @{
+            foreach (var tableRow in ViewBag.TableRows)
+            {
+                @Html.Raw(tableRow)
+            }
+        }
+    </table>
+
+    <script>
+        loadBody();
+    </script>
+</body>
+</html>
+

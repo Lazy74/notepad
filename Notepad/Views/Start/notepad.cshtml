@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "notepad";
+}
+
+<html>
+<head>
+    <title>@string.Format("Project: {0}", ViewBag.Title)</title>
+
+    <link href="/Content/bootstrap.css" rel="stylesheet"/>
+    <link href="/Content/Site.css" rel="stylesheet" />
+
+    <script src="/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="/Scripts/knockout-3.4.0.js"></script>
+    <script src="/Scripts/Site.js"></script>
+</head>
+
+<body onload="loadBody()">
+<div class="notepad">
+    <input type="text" id="NoteName" class="form-control" placeholder="Имя блока" data-bind="value: newNotepadName"/>
+    <button id="btnCreate" class="btn btn-success" data-bind="click: createNotepad">Добавить</button>
+</div>
+
+<div class="notepads" data-bind="foreach: notepads">
+    <div class="notepad-i" data-bind="text: notepadName, click: $parent.openNotepad"></div>
+</div>
+
+<div class="notepad-content">
+    @*<img data-bind="attr: { src: notepadImage }"/>*@
+    <textarea rows="20" data-bind="value: notepadContent" class="form-control"></textarea>
+    <button class="btn btn-success" data-bind="click: saveContent">Save</button>
+</div>
+</body>
+</html>
+

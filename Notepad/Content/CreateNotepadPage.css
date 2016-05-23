@@ -1,0 +1,59 @@
+﻿body {
+    margin: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: beige;
+}
+
+.form-control {
+    background-color: mintcream;
+    color: darkgreen;
+}
+
+h2 {
+    text-align: center;
+}
+
+.create-new-notepad {
+    margin: 20px;
+    display: block; 
+    text-align: center;
+}
+
+#notepad-name {
+    display: inline-block;
+    max-width: 280px;
+    width: 200px;
+}
+
+#btn-create {
+    border-radius: 10px;
+
+    display: inline-block;
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+
+    box-shadow: 3px 3px 1px rgba(10, 10, 10, 0.2);
+}
+
+#btn-create:hover {
+    transition: All 0.5s ease;
+}
+
+#btn-to-start-page {
+    border-radius: 10px;
+
+    display: inline-block;
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+
+    box-shadow: 3px 3px 1px rgba(10, 10, 10, 0.2);
+}
+
+#btn-to-start-page:hover {
+    transition: All 0.5s ease;
+    background-color: darkgray;
+}
+
+.to-start-page {
+    margin: 10px;
+    text-align: center;
+}

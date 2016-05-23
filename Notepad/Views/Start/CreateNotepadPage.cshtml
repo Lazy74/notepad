@@ -1,0 +1,27 @@
+﻿<html>
+<head>
+    <title>Create Notepad</title>
+
+    <link href="/Content/bootstrap.css" rel="stylesheet" />
+    <link href="/Content/CreateNotepadPage.css" rel="stylesheet" />
+
+    <script src="/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="/Scripts/knockout-3.4.0.js"></script>
+    <script src="/Scripts/CreateNotepadPage.js"></script>
+</head>
+<body>
+    <h2>Добавить новый блокнот</h2>
+    <div class="create-new-notepad">
+        <input type="text" id="notepad-name" class="form-control" placeholder="Название блокнота" data-bind="value: newNotepadName" />
+        <button id="btn-create" class="btn btn-success" data-bind="click: createNotepad">Создать</button>
+    </div>
+
+    <div class="to-start-page">
+        <button id="btn-to-start-page" class="btn btn-success" data-bind="click: toStartPage">Вернуться к блокнотам</button>
+    </div>
+
+    <script>
+        loadBody();
+    </script>
+</body>
+</html>

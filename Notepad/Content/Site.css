@@ -1,0 +1,74 @@
+﻿body {
+    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: beige;
+}
+
+.btn {
+    
+    box-shadow: 0 1px 5px black;
+}
+
+.notepad {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.notepad input {
+    width: 250px;
+    display: inline-block;
+}
+
+.notepad-content {
+    z-index: 1;
+    float: right;
+    width: 100%;
+}
+
+.image-name-notepad {
+    text-align: center;
+    z-index: -1;
+    position: relative;
+}
+
+.notepads {
+    float: left;
+    width: 18%;
+    margin-right: 2%;
+    position: relative;
+}
+
+.notepad-i {
+    text-align: center;
+    cursor: pointer;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.notepad-content textarea {
+    width: 100%;
+}
+
+.notepad-content button {
+    margin-top: 20px;
+    float: right;
+}
+
+.notepad-content {
+    display: block;
+    margin: 5 auto;
+    margin-bottom: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-control {
+    background-color: mintcream;
+    color: darkgreen;
+}
+
